@@ -1,12 +1,12 @@
 version: 2.1
 
 workflows:
- test-deploy:
+ test-deploy-workflow:
   jobs:
-   - test
+   - test-job
 
 jobs:
- test:
+ test-job:
   docker:
    - image: cimg/node:14.13.0
   steps:
